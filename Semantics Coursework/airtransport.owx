@@ -1,0 +1,3757 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AirCrew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirTrafficController"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirportEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirportSecurity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baggage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaggageHandlers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BedRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cafeteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Domestic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomesticJourney"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalFactors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlightAttendants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroundCrew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#International"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternationalJourney"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Journey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lounge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passengers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pilot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Route"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ticket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WashRoom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Flies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ServesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#boardsIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#guidedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasControlTower"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFlightAttendant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNumberOfStops"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPilot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRoute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTicket"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#infrastructureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#journeyViaAirports"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#landsOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#loadedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#loadedInto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maintainsAirport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#onDomesticJourney"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#onInternationalJourney"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#passengerAccess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ticketOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksTogether"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EF_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airline_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airline_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airport_city"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airport_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airport_country"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airport_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#baggage_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#baggage_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#baggage_weight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bedroom_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cafe_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cafe_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cs_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#journey_destination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#journey_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#journey_start"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#journey_stops"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#passenger_age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#passenger_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#plane_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#plane_modelname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#route_destination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#route_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#route_startlocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#staff_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#staff_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ticket_departuretime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ticket_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ticket_price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ticket_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#washroom_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AE1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AE2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AE3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AE4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AE5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AE6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AS1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AS2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AS3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AS4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AS5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AS6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATC1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATC2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATC3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATC4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATC5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATC6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airline_BritishAirways"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airline_JetAirways"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airline_QatarAirways"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BH1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BH2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BH3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BH4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BH5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BH6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BR1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BR2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BR3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BR4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BR5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BR6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ba1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ba2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ba3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ca1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ca2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ca3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ca4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ca5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ca6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DJ1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DJ2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DJ3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DR1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DR2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DR3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EF_Flooding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EF_Lightning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EF_NONE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EF_Snowstorm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FA1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FA2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FA3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IJ1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IJ2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IJ3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IR1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IR2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IR3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_John"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pi1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pi2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pi3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pl1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pl2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pl3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ti1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ti2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ti3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WR1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WR2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WR3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WR4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WR5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WR6"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AirCrew"/>
+        <Class IRI="#Crew"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirTrafficController"/>
+        <Class IRI="#GroundCrew"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirportEngineer"/>
+        <Class IRI="#GroundCrew"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirportSecurity"/>
+        <Class IRI="#GroundCrew"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaggageHandlers"/>
+        <Class IRI="#GroundCrew"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#Lounge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cafeteria"/>
+        <Class IRI="#Lounge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Domestic"/>
+        <Class IRI="#Route"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticJourney"/>
+        <Class IRI="#Journey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlightAttendants"/>
+        <Class IRI="#AirCrew"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroundCrew"/>
+        <Class IRI="#Crew"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#International"/>
+        <Class IRI="#Route"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternationalJourney"/>
+        <Class IRI="#Journey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pilot"/>
+        <Class IRI="#AirCrew"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WashRoom"/>
+        <Class IRI="#Lounge"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#AirportEngineer"/>
+        <NamedIndividual IRI="#AE1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportEngineer"/>
+        <NamedIndividual IRI="#AE2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportEngineer"/>
+        <NamedIndividual IRI="#AE3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportEngineer"/>
+        <NamedIndividual IRI="#AE4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportEngineer"/>
+        <NamedIndividual IRI="#AE5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportEngineer"/>
+        <NamedIndividual IRI="#AE6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportSecurity"/>
+        <NamedIndividual IRI="#AS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportSecurity"/>
+        <NamedIndividual IRI="#AS2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportSecurity"/>
+        <NamedIndividual IRI="#AS3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportSecurity"/>
+        <NamedIndividual IRI="#AS4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportSecurity"/>
+        <NamedIndividual IRI="#AS5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirportSecurity"/>
+        <NamedIndividual IRI="#AS6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirTrafficController"/>
+        <NamedIndividual IRI="#ATC1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirTrafficController"/>
+        <NamedIndividual IRI="#ATC2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirTrafficController"/>
+        <NamedIndividual IRI="#ATC3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirTrafficController"/>
+        <NamedIndividual IRI="#ATC4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirTrafficController"/>
+        <NamedIndividual IRI="#ATC5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirTrafficController"/>
+        <NamedIndividual IRI="#ATC6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airline"/>
+        <NamedIndividual IRI="#Airline_BritishAirways"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airline"/>
+        <NamedIndividual IRI="#Airline_JetAirways"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airline"/>
+        <NamedIndividual IRI="#Airline_QatarAirways"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BaggageHandlers"/>
+        <NamedIndividual IRI="#BH1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BaggageHandlers"/>
+        <NamedIndividual IRI="#BH2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BaggageHandlers"/>
+        <NamedIndividual IRI="#BH3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BaggageHandlers"/>
+        <NamedIndividual IRI="#BH4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BaggageHandlers"/>
+        <NamedIndividual IRI="#BH5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BaggageHandlers"/>
+        <NamedIndividual IRI="#BH6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BedRoom"/>
+        <NamedIndividual IRI="#BR1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BedRoom"/>
+        <NamedIndividual IRI="#BR2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BedRoom"/>
+        <NamedIndividual IRI="#BR3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BedRoom"/>
+        <NamedIndividual IRI="#BR4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BedRoom"/>
+        <NamedIndividual IRI="#BR5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BedRoom"/>
+        <NamedIndividual IRI="#BR6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Baggage"/>
+        <NamedIndividual IRI="#Ba1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Baggage"/>
+        <NamedIndividual IRI="#Ba2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Baggage"/>
+        <NamedIndividual IRI="#Ba3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ControlStation"/>
+        <NamedIndividual IRI="#CS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ControlStation"/>
+        <NamedIndividual IRI="#CS2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ControlStation"/>
+        <NamedIndividual IRI="#CS3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ControlStation"/>
+        <NamedIndividual IRI="#CS4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ControlStation"/>
+        <NamedIndividual IRI="#CS5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ControlStation"/>
+        <NamedIndividual IRI="#CS6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cafeteria"/>
+        <NamedIndividual IRI="#Ca1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cafeteria"/>
+        <NamedIndividual IRI="#Ca2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cafeteria"/>
+        <NamedIndividual IRI="#Ca3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cafeteria"/>
+        <NamedIndividual IRI="#Ca4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cafeteria"/>
+        <NamedIndividual IRI="#Ca5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cafeteria"/>
+        <NamedIndividual IRI="#Ca6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DomesticJourney"/>
+        <NamedIndividual IRI="#DJ1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DomesticJourney"/>
+        <NamedIndividual IRI="#DJ2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DomesticJourney"/>
+        <NamedIndividual IRI="#DJ3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Domestic"/>
+        <NamedIndividual IRI="#DR1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Domestic"/>
+        <NamedIndividual IRI="#DR2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Domestic"/>
+        <NamedIndividual IRI="#DR3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExternalFactors"/>
+        <NamedIndividual IRI="#EF_Flooding"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExternalFactors"/>
+        <NamedIndividual IRI="#EF_Lightning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExternalFactors"/>
+        <NamedIndividual IRI="#EF_NONE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExternalFactors"/>
+        <NamedIndividual IRI="#EF_Snowstorm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FlightAttendants"/>
+        <NamedIndividual IRI="#FA1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FlightAttendants"/>
+        <NamedIndividual IRI="#FA2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FlightAttendants"/>
+        <NamedIndividual IRI="#FA3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalJourney"/>
+        <NamedIndividual IRI="#IJ1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalJourney"/>
+        <NamedIndividual IRI="#IJ2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalJourney"/>
+        <NamedIndividual IRI="#IJ3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#International"/>
+        <NamedIndividual IRI="#IR1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#International"/>
+        <NamedIndividual IRI="#IR2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#International"/>
+        <NamedIndividual IRI="#IR3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Passengers"/>
+        <NamedIndividual IRI="#Pa_John"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Passengers"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Passengers"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pilot"/>
+        <NamedIndividual IRI="#Pi1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pilot"/>
+        <NamedIndividual IRI="#Pi2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pilot"/>
+        <NamedIndividual IRI="#Pi3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plane"/>
+        <NamedIndividual IRI="#Pl1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plane"/>
+        <NamedIndividual IRI="#Pl2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plane"/>
+        <NamedIndividual IRI="#Pl3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ti1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ti2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ti3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WashRoom"/>
+        <NamedIndividual IRI="#WR1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WashRoom"/>
+        <NamedIndividual IRI="#WR2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WashRoom"/>
+        <NamedIndividual IRI="#WR3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WashRoom"/>
+        <NamedIndividual IRI="#WR4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WashRoom"/>
+        <NamedIndividual IRI="#WR5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WashRoom"/>
+        <NamedIndividual IRI="#WR6"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maintainsAirport"/>
+        <NamedIndividual IRI="#AE1"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AE1"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maintainsAirport"/>
+        <NamedIndividual IRI="#AE2"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AE2"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maintainsAirport"/>
+        <NamedIndividual IRI="#AE3"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AE3"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maintainsAirport"/>
+        <NamedIndividual IRI="#AE4"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AE4"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maintainsAirport"/>
+        <NamedIndividual IRI="#AE5"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AE5"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maintainsAirport"/>
+        <NamedIndividual IRI="#AE6"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AE6"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AS1"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AS2"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AS3"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AS4"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AS5"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#AS6"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#ATC1"/>
+        <NamedIndividual IRI="#CS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#ATC2"/>
+        <NamedIndividual IRI="#CS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#ATC3"/>
+        <NamedIndividual IRI="#CS3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#ATC4"/>
+        <NamedIndividual IRI="#CS4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#ATC5"/>
+        <NamedIndividual IRI="#CS5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#ATC6"/>
+        <NamedIndividual IRI="#CS6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFlightAttendant"/>
+        <NamedIndividual IRI="#Airline_BritishAirways"/>
+        <NamedIndividual IRI="#FA1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPilot"/>
+        <NamedIndividual IRI="#Airline_BritishAirways"/>
+        <NamedIndividual IRI="#Pi1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFlightAttendant"/>
+        <NamedIndividual IRI="#Airline_JetAirways"/>
+        <NamedIndividual IRI="#FA2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPilot"/>
+        <NamedIndividual IRI="#Airline_JetAirways"/>
+        <NamedIndividual IRI="#Pi2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFlightAttendant"/>
+        <NamedIndividual IRI="#Airline_QatarAirways"/>
+        <NamedIndividual IRI="#FA3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPilot"/>
+        <NamedIndividual IRI="#Airline_QatarAirways"/>
+        <NamedIndividual IRI="#Pi3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+        <NamedIndividual IRI="#AE1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+        <NamedIndividual IRI="#AS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+        <NamedIndividual IRI="#BH1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+        <NamedIndividual IRI="#AE1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+        <NamedIndividual IRI="#AS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+        <NamedIndividual IRI="#BH1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+        <NamedIndividual IRI="#AE3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+        <NamedIndividual IRI="#AS3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+        <NamedIndividual IRI="#BH3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+        <NamedIndividual IRI="#AE4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+        <NamedIndividual IRI="#AS4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+        <NamedIndividual IRI="#BH4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+        <NamedIndividual IRI="#AE5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+        <NamedIndividual IRI="#AS5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+        <NamedIndividual IRI="#BH5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+        <NamedIndividual IRI="#AE6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+        <NamedIndividual IRI="#AS6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+        <NamedIndividual IRI="#BH6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#BH1"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#BH2"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#BH3"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#BH4"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#BH5"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#BH6"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#BR1"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#BR2"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#BR3"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#BR4"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#BR5"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#BR6"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsTo"/>
+        <NamedIndividual IRI="#Ba1"/>
+        <NamedIndividual IRI="#Pa_John"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedInto"/>
+        <NamedIndividual IRI="#Ba1"/>
+        <NamedIndividual IRI="#Pl1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsTo"/>
+        <NamedIndividual IRI="#Ba2"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedInto"/>
+        <NamedIndividual IRI="#Ba2"/>
+        <NamedIndividual IRI="#Pl2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsTo"/>
+        <NamedIndividual IRI="#Ba3"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedInto"/>
+        <NamedIndividual IRI="#Ba3"/>
+        <NamedIndividual IRI="#Pl3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+        <NamedIndividual IRI="#CS1"/>
+        <NamedIndividual IRI="#ATC1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+        <NamedIndividual IRI="#CS2"/>
+        <NamedIndividual IRI="#ATC2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+        <NamedIndividual IRI="#CS3"/>
+        <NamedIndividual IRI="#ATC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+        <NamedIndividual IRI="#CS4"/>
+        <NamedIndividual IRI="#ATC4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+        <NamedIndividual IRI="#CS5"/>
+        <NamedIndividual IRI="#ATC5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+        <NamedIndividual IRI="#CS6"/>
+        <NamedIndividual IRI="#ATC6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#Ca1"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#Ca2"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#Ca3"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#Ca4"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#Ca5"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#Ca6"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRoute"/>
+        <NamedIndividual IRI="#DJ1"/>
+        <NamedIndividual IRI="#DR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#journeyViaAirports"/>
+        <NamedIndividual IRI="#DJ1"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRoute"/>
+        <NamedIndividual IRI="#DJ2"/>
+        <NamedIndividual IRI="#DR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+        <NamedIndividual IRI="#DJ3"/>
+        <NamedIndividual IRI="#EF_Flooding"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRoute"/>
+        <NamedIndividual IRI="#DJ3"/>
+        <NamedIndividual IRI="#DR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#journeyViaAirports"/>
+        <NamedIndividual IRI="#DJ3"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasControlTower"/>
+        <NamedIndividual IRI="#DR1"/>
+        <NamedIndividual IRI="#CS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+        <NamedIndividual IRI="#DR1"/>
+        <NamedIndividual IRI="#EF_NONE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#landsOn"/>
+        <NamedIndividual IRI="#DR1"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasControlTower"/>
+        <NamedIndividual IRI="#DR2"/>
+        <NamedIndividual IRI="#CS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+        <NamedIndividual IRI="#DR2"/>
+        <NamedIndividual IRI="#EF_NONE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#landsOn"/>
+        <NamedIndividual IRI="#DR2"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasControlTower"/>
+        <NamedIndividual IRI="#DR3"/>
+        <NamedIndividual IRI="#CS3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+        <NamedIndividual IRI="#DR3"/>
+        <NamedIndividual IRI="#EF_Lightning"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#landsOn"/>
+        <NamedIndividual IRI="#DR3"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ServesIn"/>
+        <NamedIndividual IRI="#FA1"/>
+        <NamedIndividual IRI="#Pl1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#FA1"/>
+        <NamedIndividual IRI="#Airline_BritishAirways"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksTogether"/>
+        <NamedIndividual IRI="#FA1"/>
+        <NamedIndividual IRI="#Pi1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ServesIn"/>
+        <NamedIndividual IRI="#FA2"/>
+        <NamedIndividual IRI="#Pl2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#FA2"/>
+        <NamedIndividual IRI="#Airline_JetAirways"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksTogether"/>
+        <NamedIndividual IRI="#FA2"/>
+        <NamedIndividual IRI="#Pi2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ServesIn"/>
+        <NamedIndividual IRI="#FA3"/>
+        <NamedIndividual IRI="#Pl3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksTogether"/>
+        <NamedIndividual IRI="#FA3"/>
+        <NamedIndividual IRI="#Pi3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRoute"/>
+        <NamedIndividual IRI="#IJ1"/>
+        <NamedIndividual IRI="#DR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRoute"/>
+        <NamedIndividual IRI="#IJ1"/>
+        <NamedIndividual IRI="#IR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#journeyViaAirports"/>
+        <NamedIndividual IRI="#IJ1"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRoute"/>
+        <NamedIndividual IRI="#IJ2"/>
+        <NamedIndividual IRI="#IR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRoute"/>
+        <NamedIndividual IRI="#IJ3"/>
+        <NamedIndividual IRI="#IR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasControlTower"/>
+        <NamedIndividual IRI="#IR1"/>
+        <NamedIndividual IRI="#CS4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+        <NamedIndividual IRI="#IR1"/>
+        <NamedIndividual IRI="#EF_Lightning"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#landsOn"/>
+        <NamedIndividual IRI="#IR1"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasControlTower"/>
+        <NamedIndividual IRI="#IR2"/>
+        <NamedIndividual IRI="#CS5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+        <NamedIndividual IRI="#IR2"/>
+        <NamedIndividual IRI="#EF_Lightning"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#landsOn"/>
+        <NamedIndividual IRI="#IR2"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasControlTower"/>
+        <NamedIndividual IRI="#IR3"/>
+        <NamedIndividual IRI="#CS6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+        <NamedIndividual IRI="#IR3"/>
+        <NamedIndividual IRI="#EF_NONE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#landsOn"/>
+        <NamedIndividual IRI="#IR3"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#guidedBy"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#CS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#guidedBy"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#CS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#guidedBy"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#CS3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTicket"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#Ti1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#onDomesticJourney"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#DJ2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#BR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#BR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#BR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#Ca1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#Ca2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#Ca3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#WR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#WR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <NamedIndividual IRI="#WR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTicket"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#Ti2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#onInternationalJourney"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#IJ2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#BR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#BR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#BR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#Ca1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#Ca2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#Ca3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#WR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#WR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <NamedIndividual IRI="#WR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTicket"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#Ti3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#onInternationalJourney"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#IJ3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#BR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#BR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#BR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#Ca1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#Ca2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#Ca3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#WR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#WR2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <NamedIndividual IRI="#WR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Pi1"/>
+        <NamedIndividual IRI="#Airline_BritishAirways"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksTogether"/>
+        <NamedIndividual IRI="#Pi1"/>
+        <NamedIndividual IRI="#FA1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Pi2"/>
+        <NamedIndividual IRI="#Airline_JetAirways"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksTogether"/>
+        <NamedIndividual IRI="#Pi2"/>
+        <NamedIndividual IRI="#FA2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Pi3"/>
+        <NamedIndividual IRI="#Airline_QatarAirways"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksTogether"/>
+        <NamedIndividual IRI="#Pi3"/>
+        <NamedIndividual IRI="#FA3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#guidedBy"/>
+        <NamedIndividual IRI="#Pl1"/>
+        <NamedIndividual IRI="#CS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedBy"/>
+        <NamedIndividual IRI="#Pl1"/>
+        <NamedIndividual IRI="#AE1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedBy"/>
+        <NamedIndividual IRI="#Pl1"/>
+        <NamedIndividual IRI="#AS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedBy"/>
+        <NamedIndividual IRI="#Pl1"/>
+        <NamedIndividual IRI="#BH1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#onDomesticJourney"/>
+        <NamedIndividual IRI="#Pl1"/>
+        <NamedIndividual IRI="#DJ2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#guidedBy"/>
+        <NamedIndividual IRI="#Pl2"/>
+        <NamedIndividual IRI="#CS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedBy"/>
+        <NamedIndividual IRI="#Pl2"/>
+        <NamedIndividual IRI="#AE2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedBy"/>
+        <NamedIndividual IRI="#Pl2"/>
+        <NamedIndividual IRI="#AS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedBy"/>
+        <NamedIndividual IRI="#Pl2"/>
+        <NamedIndividual IRI="#BH2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#guidedBy"/>
+        <NamedIndividual IRI="#Pl3"/>
+        <NamedIndividual IRI="#CS3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedBy"/>
+        <NamedIndividual IRI="#Pl3"/>
+        <NamedIndividual IRI="#AE3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedBy"/>
+        <NamedIndividual IRI="#Pl3"/>
+        <NamedIndividual IRI="#AS3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#loadedBy"/>
+        <NamedIndividual IRI="#Pl3"/>
+        <NamedIndividual IRI="#BH3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#onInternationalJourney"/>
+        <NamedIndividual IRI="#Pl3"/>
+        <NamedIndividual IRI="#IJ3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#WR1"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#WR2"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#WR3"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#WR4"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#WR5"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <NamedIndividual IRI="#WR6"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AE1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AE1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Nad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AE2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AE2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Lissav</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AE3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AE3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Redni</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AE4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AE4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Emiru</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AE5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S102</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AE5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Alpha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AE6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AE6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Beta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AS1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AS1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Racheal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AS2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AS2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Phoebe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AS3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AS3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ross</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AS4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S104</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AS4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Joey</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AS5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S105</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AS5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Monica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#AS6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S106</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#AS6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Chandler</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#ATC1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#ATC1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Deaas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#ATC2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#ATC2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Lewap</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#ATC3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#ATC3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Alan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#ATC4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S107</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#ATC4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Max</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#ATC5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S108</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#ATC5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Stuart</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#ATC6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S109</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#ATC6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Phil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_code"/>
+        <NamedIndividual IRI="#Airline_BritishAirways"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BA131</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_name"/>
+        <NamedIndividual IRI="#Airline_BritishAirways"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">British Airways</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_code"/>
+        <NamedIndividual IRI="#Airline_JetAirways"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JA141</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_name"/>
+        <NamedIndividual IRI="#Airline_JetAirways"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JetAirways</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_code"/>
+        <NamedIndividual IRI="#Airline_QatarAirways"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">QA151</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_name"/>
+        <NamedIndividual IRI="#Airline_QatarAirways"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">QatarAirways</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_city"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Dublin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_code"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">DUB111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_country"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ireland</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Dublin City Airport</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#Airport_Dublin"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rome City</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_city"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kiev</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_code"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ki777</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_code"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Os123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_country"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ukraine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#Airport_Kiev"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kiev City Airport</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_city"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Oslo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_code"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Os123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_country"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Norway</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#Airport_Oslo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Oslo International</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_city"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Reykjavik</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_code"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rey987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_country"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Iceland</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#Airport_Reykjavik"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Reykjavik</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_city"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_code"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rom567</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_country"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Italy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#Airport_Rome"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rome City</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_city"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vienna</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_code"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">VIE333</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_country"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Austria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#Airport_Vienna"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vienna city airport</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#BH1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#BH1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Pam</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#BH2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#BH2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Jim</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#BH3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#BH3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Scott</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#BH4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S110</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#BH4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Dwight</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#BH5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#BH5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Andy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#BH6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S112</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#BH6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kevin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bedroom_id"/>
+        <NamedIndividual IRI="#BR1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bedroom_id"/>
+        <NamedIndividual IRI="#BR2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bedroom_id"/>
+        <NamedIndividual IRI="#BR3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bedroom_id"/>
+        <NamedIndividual IRI="#BR4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bedroom_id"/>
+        <NamedIndividual IRI="#BR5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bedroom_id"/>
+        <NamedIndividual IRI="#BR6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_id"/>
+        <NamedIndividual IRI="#Ba1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BA1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_type"/>
+        <NamedIndividual IRI="#Ba1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">bag</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_weight"/>
+        <NamedIndividual IRI="#Ba1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">14.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_id"/>
+        <NamedIndividual IRI="#Ba2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BA2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_type"/>
+        <NamedIndividual IRI="#Ba2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Suitcase</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_weight"/>
+        <NamedIndividual IRI="#Ba2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_id"/>
+        <NamedIndividual IRI="#Ba3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BA3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_type"/>
+        <NamedIndividual IRI="#Ba3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">bag</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_weight"/>
+        <NamedIndividual IRI="#Ba3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">10.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cs_code"/>
+        <NamedIndividual IRI="#CS1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cs_code"/>
+        <NamedIndividual IRI="#CS2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cs_code"/>
+        <NamedIndividual IRI="#CS3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cs_code"/>
+        <NamedIndividual IRI="#CS4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cs_code"/>
+        <NamedIndividual IRI="#CS5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cs_code"/>
+        <NamedIndividual IRI="#CS6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_id"/>
+        <NamedIndividual IRI="#Ca1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_name"/>
+        <NamedIndividual IRI="#Ca1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_id"/>
+        <NamedIndividual IRI="#Ca2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_name"/>
+        <NamedIndividual IRI="#Ca2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_id"/>
+        <NamedIndividual IRI="#Ca3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_name"/>
+        <NamedIndividual IRI="#Ca3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_id"/>
+        <NamedIndividual IRI="#Ca4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_name"/>
+        <NamedIndividual IRI="#Ca4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_id"/>
+        <NamedIndividual IRI="#Ca5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_name"/>
+        <NamedIndividual IRI="#Ca5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_id"/>
+        <NamedIndividual IRI="#Ca6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cafe_name"/>
+        <NamedIndividual IRI="#Ca6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_destination"/>
+        <NamedIndividual IRI="#DJ1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Luton</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_id"/>
+        <NamedIndividual IRI="#DJ1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JFK911</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_start"/>
+        <NamedIndividual IRI="#DJ1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">London</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_stops"/>
+        <NamedIndividual IRI="#DJ1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_destination"/>
+        <NamedIndividual IRI="#DJ2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vienna</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_id"/>
+        <NamedIndividual IRI="#DJ2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">HET7862</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_start"/>
+        <NamedIndividual IRI="#DJ2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Linz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_stops"/>
+        <NamedIndividual IRI="#DJ2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_id"/>
+        <NamedIndividual IRI="#DJ3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">California</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_id"/>
+        <NamedIndividual IRI="#DJ3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">POP7651</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_start"/>
+        <NamedIndividual IRI="#DJ3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">New York</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_stops"/>
+        <NamedIndividual IRI="#DJ3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_destination"/>
+        <NamedIndividual IRI="#DR1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_id"/>
+        <NamedIndividual IRI="#DR1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">USA7893</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_startlocation"/>
+        <NamedIndividual IRI="#DR1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Sudtyrol</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_destination"/>
+        <NamedIndividual IRI="#DR2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kiev</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_id"/>
+        <NamedIndividual IRI="#DR2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">IN1345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_startlocation"/>
+        <NamedIndividual IRI="#DR2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Crimea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_destination"/>
+        <NamedIndividual IRI="#DR3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Dublin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_id"/>
+        <NamedIndividual IRI="#DR3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">IN1345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_startlocation"/>
+        <NamedIndividual IRI="#DR3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Belfast</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EF_name"/>
+        <NamedIndividual IRI="#EF_Flooding"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Flooding</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EF_name"/>
+        <NamedIndividual IRI="#EF_Lightning"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Lightning</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EF_name"/>
+        <NamedIndividual IRI="#EF_NONE"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Clear</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EF_name"/>
+        <NamedIndividual IRI="#EF_Snowstorm"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Snowstorm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#FA1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#FA1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ayirp</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#FA2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ben</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#FA2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#FA3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#FA3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Samuel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_destination"/>
+        <NamedIndividual IRI="#IJ1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Oslo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_id"/>
+        <NamedIndividual IRI="#IJ1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">IUK1894</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_start"/>
+        <NamedIndividual IRI="#IJ1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Sudtyrol</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_stops"/>
+        <NamedIndividual IRI="#IJ1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_destination"/>
+        <NamedIndividual IRI="#IJ2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Oslo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_id"/>
+        <NamedIndividual IRI="#IJ2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">GRT1479</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_start"/>
+        <NamedIndividual IRI="#IJ2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kiev</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_stops"/>
+        <NamedIndividual IRI="#IJ2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_destination"/>
+        <NamedIndividual IRI="#IJ3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vienna</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_id"/>
+        <NamedIndividual IRI="#IJ3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">MEA5432</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_start"/>
+        <NamedIndividual IRI="#IJ3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">dublin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#journey_stops"/>
+        <NamedIndividual IRI="#IJ3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_destination"/>
+        <NamedIndividual IRI="#IR1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Oslo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_id"/>
+        <NamedIndividual IRI="#IR1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">MEA1345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_startlocation"/>
+        <NamedIndividual IRI="#IR1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_destination"/>
+        <NamedIndividual IRI="#IR2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Reykjavik</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_id"/>
+        <NamedIndividual IRI="#IR2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">SUM7617</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_startlocation"/>
+        <NamedIndividual IRI="#IR2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kiev</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_destination"/>
+        <NamedIndividual IRI="#IR3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vienna</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_id"/>
+        <NamedIndividual IRI="#IR3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">FRE1945</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#route_startlocation"/>
+        <NamedIndividual IRI="#IR3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Dublin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#passenger_age"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#passenger_name"/>
+        <NamedIndividual IRI="#Pa_John"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">John</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#passenger_age"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#passenger_name"/>
+        <NamedIndividual IRI="#Pa_Vassil"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vassil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#passenger_age"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#passenger_name"/>
+        <NamedIndividual IRI="#Pa_Vassilev"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vassilev</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#Pi1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#Pi1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Avdol</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#Pi2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#Pi2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Joseph</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_id"/>
+        <NamedIndividual IRI="#Pi3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staff_name"/>
+        <NamedIndividual IRI="#Pi3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Jotaro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#plane_id"/>
+        <NamedIndividual IRI="#Pl1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">PLA1234</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#plane_modelname"/>
+        <NamedIndividual IRI="#Pl1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Airbus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#plane_id"/>
+        <NamedIndividual IRI="#Pl2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">PLA7856</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#plane_modelname"/>
+        <NamedIndividual IRI="#Pl2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Mini</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#plane_id"/>
+        <NamedIndividual IRI="#Pl3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">PLA7862</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#plane_modelname"/>
+        <NamedIndividual IRI="#Pl3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Booeing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_departuretime"/>
+        <NamedIndividual IRI="#Ti1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_number"/>
+        <NamedIndividual IRI="#Ti1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">123B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_price"/>
+        <NamedIndividual IRI="#Ti1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">123.25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_type"/>
+        <NamedIndividual IRI="#Ti1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Business</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_departuretime"/>
+        <NamedIndividual IRI="#Ti2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">1600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_number"/>
+        <NamedIndividual IRI="#Ti2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">147Q</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_price"/>
+        <NamedIndividual IRI="#Ti2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_type"/>
+        <NamedIndividual IRI="#Ti2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">First Class</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_departuretime"/>
+        <NamedIndividual IRI="#Ti3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_number"/>
+        <NamedIndividual IRI="#Ti3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">129T</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_price"/>
+        <NamedIndividual IRI="#Ti3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ticket_type"/>
+        <NamedIndividual IRI="#Ti3"/>
+        <Literal>Economy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#washroom_id"/>
+        <NamedIndividual IRI="#WR1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">W1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#washroom_id"/>
+        <NamedIndividual IRI="#WR2"/>
+        <Literal>W2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#washroom_id"/>
+        <NamedIndividual IRI="#WR3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">W3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#washroom_id"/>
+        <NamedIndividual IRI="#WR4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">W4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#washroom_id"/>
+        <NamedIndividual IRI="#WR5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">W5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#washroom_id"/>
+        <NamedIndividual IRI="#WR6"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">WR6</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Flies"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#belongsTo"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#boardsIn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#consistsOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#guidedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasControlTower"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasFlightAttendant"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasNumberOfStops"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasPilot"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRoute"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTicket"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#infrastructureOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#journeyViaAirports"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#landsOn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#loadedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#loadedInto"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#maintainsAirport"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#onDomesticJourney"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#onInternationalJourney"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#passengerAccess"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ticketOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#worksFor"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#worksTogether"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Flies"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#belongsTo"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#boardsIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#consistsOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#guidedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasControlTower"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFlightAttendant"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPilot"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRoute"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasTicket"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#infrastructureOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#journeyViaAirports"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#landsOn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#loadedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#loadedInto"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#maintainsAirport"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#onDomesticJourney"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#onInternationalJourney"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#passengerAccess"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#ticketOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#worksFor"/>
+    </AsymmetricObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#worksTogether"/>
+    </ReflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Flies"/>
+        <Class IRI="#Pilot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ServesIn"/>
+        <Class IRI="#FlightAttendants"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsTo"/>
+        <Class IRI="#Baggage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#boardsIn"/>
+        <Class IRI="#Passengers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consistsOf"/>
+        <Class IRI="#Airport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#guidedBy"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+        <Class IRI="#ControlStation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasControlTower"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFlightAttendant"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <Class IRI="#Airport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNumberOfStops"/>
+        <Class IRI="#Journey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPilot"/>
+        <Class IRI="#Airline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRoute"/>
+        <Class IRI="#Journey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTicket"/>
+        <Class IRI="#Passengers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <Class IRI="#Lounge"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#journeyViaAirports"/>
+        <Class IRI="#Journey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#landsOn"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#loadedBy"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#loadedInto"/>
+        <Class IRI="#Baggage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maintainsAirport"/>
+        <Class IRI="#AirportEngineer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#onDomesticJourney"/>
+        <Class IRI="#Passengers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#onDomesticJourney"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#onInternationalJourney"/>
+        <Class IRI="#Passengers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#onInternationalJourney"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <Class IRI="#Passengers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ticketOf"/>
+        <Class IRI="#Ticket"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksFor"/>
+        <Class IRI="#Crew"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksTogether"/>
+        <Class IRI="#Pilot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Flies"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ServesIn"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsTo"/>
+        <Class IRI="#Passengers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#boardsIn"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consistsOf"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#guidedBy"/>
+        <Class IRI="#ControlStation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAirControllStaff"/>
+        <Class IRI="#AirTrafficController"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasControlTower"/>
+        <Class IRI="#ControlStation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExternalFactors"/>
+        <Class IRI="#ExternalFactors"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFlightAttendant"/>
+        <Class IRI="#FlightAttendants"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGroundCrew"/>
+        <Class IRI="#GroundCrew"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNumberOfStops"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#journey_stops"/>
+            <Datatype abbreviatedIRI="owl:real"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPilot"/>
+        <Class IRI="#Pilot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRoute"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTicket"/>
+        <Class IRI="#Ticket"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#infrastructureOf"/>
+        <Class IRI="#Airport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#journeyViaAirports"/>
+        <Class IRI="#Airport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#landsOn"/>
+        <Class IRI="#Airport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#loadedBy"/>
+        <Class IRI="#BaggageHandlers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#loadedInto"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maintainsAirport"/>
+        <Class IRI="#Airport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#onDomesticJourney"/>
+        <Class IRI="#DomesticJourney"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#onInternationalJourney"/>
+        <Class IRI="#InternationalJourney"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#onInternationalJourney"/>
+        <Class IRI="#Journey"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#passengerAccess"/>
+        <Class IRI="#Lounge"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ticketOf"/>
+        <Class IRI="#Journey"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksFor"/>
+        <Class IRI="#Airline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksFor"/>
+        <Class IRI="#Airport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksTogether"/>
+        <Class IRI="#FlightAttendants"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EF_name"/>
+        <Class IRI="#ExternalFactors"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airline_code"/>
+        <Class IRI="#Airline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airline_name"/>
+        <Class IRI="#Airline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airport_city"/>
+        <Class IRI="#Airport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airport_code"/>
+        <Class IRI="#Airport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airport_country"/>
+        <Class IRI="#Airport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airport_name"/>
+        <Class IRI="#Airport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baggage_id"/>
+        <Class IRI="#Baggage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baggage_type"/>
+        <Class IRI="#Baggage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baggage_weight"/>
+        <Class IRI="#Baggage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#bedroom_id"/>
+        <Class IRI="#BedRoom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cafe_id"/>
+        <Class IRI="#Cafeteria"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cafe_name"/>
+        <Class IRI="#Cafeteria"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cs_code"/>
+        <Class IRI="#ControlStation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#journey_destination"/>
+        <Class IRI="#Journey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#journey_id"/>
+        <Class IRI="#Journey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#journey_start"/>
+        <Class IRI="#Journey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#journey_stops"/>
+        <Class IRI="#Journey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#passenger_age"/>
+        <Class IRI="#Passengers"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#passenger_name"/>
+        <Class IRI="#Passengers"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#plane_id"/>
+        <Class IRI="#Plane"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#plane_modelname"/>
+        <Class IRI="#Plane"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#route_destination"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#route_id"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#route_startlocation"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#staff_id"/>
+        <Class IRI="#Crew"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#staff_name"/>
+        <Class IRI="#Crew"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ticket_departuretime"/>
+        <Class IRI="#Ticket"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ticket_number"/>
+        <Class IRI="#Ticket"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ticket_price"/>
+        <Class IRI="#Ticket"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ticket_type"/>
+        <Class IRI="#Ticket"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#washroom_id"/>
+        <Class IRI="#WashRoom"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#EF_name"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airline_code"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airline_name"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airport_city"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airport_code"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airport_country"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airport_name"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#baggage_id"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#baggage_type"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#baggage_weight"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#bedroom_id"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cafe_id"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cafe_name"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cs_code"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#journey_destination"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#journey_id"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#journey_start"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#journey_stops"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#passenger_age"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#passenger_name"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#plane_id"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#plane_modelname"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#route_destination"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#route_id"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#route_startlocation"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#staff_id"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#staff_name"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ticket_departuretime"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ticket_number"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ticket_price"/>
+        <DataOneOf>
+            <Literal>$</Literal>
+            <Literal>£</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ticket_type"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#washroom_id"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Every Journey with more than 0 intermediate stops passes via an airport</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Journey"/>
+                <Variable IRI="/x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Airport"/>
+                <Variable IRI="/y"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNumberOfStops"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/n"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/n"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#journeyViaAirports"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Every plane in a journey is guided by a control tower guiding it</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Route"/>
+                <Variable IRI="/w"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Plane"/>
+                <Variable IRI="/x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Journey"/>
+                <Variable IRI="/y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#ControlStation"/>
+                <Variable IRI="/z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#onDomesticJourney"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRoute"/>
+                <Variable IRI="/y"/>
+                <Variable IRI="/w"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#guidedBy"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Some journeys may have an exteral factor</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Journey"/>
+                <Variable IRI="/x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#ExternalFactors"/>
+                <Variable IRI="/y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasExternalFactors"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Pilot and flightattendants work together in a flight</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Pilot"/>
+                <Variable IRI="/x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#FlightAttendants"/>
+                <Variable IRI="/y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Plane"/>
+                <Variable IRI="/z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Flies"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ServesIn"/>
+                <Variable IRI="/y"/>
+                <Variable IRI="/z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#worksTogether"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>A passenger with a valid ticket has access to Lounge</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S6</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Ticket"/>
+                <Variable IRI="/x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Passengers"/>
+                <Variable IRI="/y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Lounge"/>
+                <Variable IRI="/z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasTicket"/>
+                <Variable IRI="/y"/>
+                <Variable IRI="/x"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#passengerAccess"/>
+                <Variable IRI="/y"/>
+                <Variable IRI="/z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Every passenger with a ticket is on a journey</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Ticket"/>
+                <Variable IRI="/z"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Passengers"/>
+                <Variable IRI="/y"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasTicket"/>
+                <Variable IRI="/y"/>
+                <Variable IRI="/z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ticketOf"/>
+                <Variable IRI="/z"/>
+                <Variable IRI="/x"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Journey"/>
+                <Variable IRI="/x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
