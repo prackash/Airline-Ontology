@@ -1,0 +1,2548 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/indra/ontologies/2023/4/untitled-ontology-24#"
+     xml:base="http://www.semanticweb.org/indra/ontologies/2023/4/untitled-ontology-24"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/indra/ontologies/2023/4/untitled-ontology-24"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Flies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Flies">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pilot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ServesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ServesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FlightAttendants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#belongsTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Baggage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#boardsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#boardsIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#consistsOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#guidedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#guidedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasAirControllStaff -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasAirControllStaff">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirTrafficController"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasControlTower -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasControlTower">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasExternalFactors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasExternalFactors">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ExternalFactors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasFlightAttendant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasFlightAttendant">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FlightAttendants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasGroundCrew -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasGroundCrew">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasNumberOfStops -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasNumberOfStops">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journey_stops"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasPilot -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasPilot">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pilot"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasRoute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasRoute">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasTicket -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasTicket">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#infrastructureOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#infrastructureOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journeyViaAirports -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journeyViaAirports">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#landsOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#landsOn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#loadedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#loadedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BaggageHandlers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#loadedInto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#loadedInto">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Baggage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#maintainsAirport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#maintainsAirport">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportEngineer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#onDomesticJourney -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#onDomesticJourney">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DomesticJourney"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#onInternationalJourney -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#onInternationalJourney">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#InternationalJourney"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#passengerAccess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#passengerAccess">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticketOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticketOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#worksFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#worksFor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#worksTogether -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#worksTogether">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pilot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FlightAttendants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ExternalFactors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airline_code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airline_code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airline_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airline_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airport_city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airport_city">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airport_code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airport_code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airport_country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airport_country">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airport_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#airport_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#baggage_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#baggage_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Baggage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#baggage_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#baggage_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Baggage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#baggage_weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#baggage_weight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Baggage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#bedroom_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#bedroom_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BedRoom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#cafe_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#cafe_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Cafeteria"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#cafe_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#cafe_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Cafeteria"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#cs_code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#cs_code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journey_destination -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journey_destination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journey_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journey_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journey_start -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journey_start">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journey_stops -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journey_stops">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#passenger_age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#passenger_age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#passenger_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#passenger_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#plane_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#plane_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#plane_modelname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#plane_modelname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#route_destination -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#route_destination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#route_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#route_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#route_startlocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#route_startlocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#staff_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#staff_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#staff_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#staff_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticket_departuretime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticket_departuretime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticket_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticket_number">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticket_price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticket_price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>$</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>£</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticket_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticket_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#washroom_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#washroom_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WashRoom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirCrew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirCrew">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirTrafficController -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirTrafficController">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportEngineer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportSecurity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportSecurity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Baggage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Baggage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BaggageHandlers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BaggageHandlers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BedRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BedRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Cafeteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Cafeteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Domestic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Domestic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DomesticJourney -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DomesticJourney">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ExternalFactors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ExternalFactors"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FlightAttendants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FlightAttendants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirCrew"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#International -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#International">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#InternationalJourney -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#InternationalJourney">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pilot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pilot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirCrew"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WashRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WashRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportEngineer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:maintainsAirport rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S1</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Nad</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportEngineer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:maintainsAirport rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S2</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Lissav</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportEngineer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:maintainsAirport rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Dublin"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Dublin"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S3</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Redni</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportEngineer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:maintainsAirport rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S101</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Emiru</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportEngineer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:maintainsAirport rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Reykjavik"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Reykjavik"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S102</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Alpha</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportEngineer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:maintainsAirport rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Vienna"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Vienna"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S103</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Beta</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportSecurity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S4</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Racheal</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportSecurity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S5</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Phoebe</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportSecurity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Dublin"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S6</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ross</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportSecurity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S104</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Joey</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportSecurity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Reykjavik"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S105</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Monica</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirportSecurity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Vienna"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S106</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Chandler</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirTrafficController"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS1"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S7</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Deaas</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirTrafficController"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS2"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S8</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Lewap</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirTrafficController"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS3"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S9</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Alan</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirTrafficController"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS4"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S107</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Max</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirTrafficController"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS5"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S108</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Stuart</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirTrafficController"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS6"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S109</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Phil</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_BritishAirways -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_BritishAirways">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline"/>
+        <untitled-ontology-6:hasFlightAttendant rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA1"/>
+        <untitled-ontology-6:hasPilot rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi1"/>
+        <untitled-ontology-6:airline_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BA131</untitled-ontology-6:airline_code>
+        <untitled-ontology-6:airline_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">British Airways</untitled-ontology-6:airline_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_JetAirways -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_JetAirways">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline"/>
+        <untitled-ontology-6:hasFlightAttendant rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA2"/>
+        <untitled-ontology-6:hasPilot rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi2"/>
+        <untitled-ontology-6:airline_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JA141</untitled-ontology-6:airline_code>
+        <untitled-ontology-6:airline_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JetAirways</untitled-ontology-6:airline_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_QatarAirways -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_QatarAirways">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline"/>
+        <untitled-ontology-6:hasFlightAttendant rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA3"/>
+        <untitled-ontology-6:hasPilot rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi3"/>
+        <untitled-ontology-6:airline_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">QA151</untitled-ontology-6:airline_code>
+        <untitled-ontology-6:airline_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">QatarAirways</untitled-ontology-6:airline_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Dublin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Dublin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE1"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS1"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH1"/>
+        <untitled-ontology-6:airport_city rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Dublin</untitled-ontology-6:airport_city>
+        <untitled-ontology-6:airport_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">DUB111</untitled-ontology-6:airport_code>
+        <untitled-ontology-6:airport_country rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ireland</untitled-ontology-6:airport_country>
+        <untitled-ontology-6:airport_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Dublin City Airport</untitled-ontology-6:airport_name>
+        <untitled-ontology-6:airport_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rome City</untitled-ontology-6:airport_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE1"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS1"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH1"/>
+        <untitled-ontology-6:airport_city rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kiev</untitled-ontology-6:airport_city>
+        <untitled-ontology-6:airport_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ki777</untitled-ontology-6:airport_code>
+        <untitled-ontology-6:airport_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Os123</untitled-ontology-6:airport_code>
+        <untitled-ontology-6:airport_country rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ukraine</untitled-ontology-6:airport_country>
+        <untitled-ontology-6:airport_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kiev City Airport</untitled-ontology-6:airport_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE3"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS3"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH3"/>
+        <untitled-ontology-6:airport_city rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Oslo</untitled-ontology-6:airport_city>
+        <untitled-ontology-6:airport_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Os123</untitled-ontology-6:airport_code>
+        <untitled-ontology-6:airport_country rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Norway</untitled-ontology-6:airport_country>
+        <untitled-ontology-6:airport_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Oslo International</untitled-ontology-6:airport_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Reykjavik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Reykjavik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE4"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS4"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH4"/>
+        <untitled-ontology-6:airport_city rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Reykjavik</untitled-ontology-6:airport_city>
+        <untitled-ontology-6:airport_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rey987</untitled-ontology-6:airport_code>
+        <untitled-ontology-6:airport_country rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Iceland</untitled-ontology-6:airport_country>
+        <untitled-ontology-6:airport_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Reykjavik</untitled-ontology-6:airport_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE5"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS5"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH5"/>
+        <untitled-ontology-6:airport_city rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rome</untitled-ontology-6:airport_city>
+        <untitled-ontology-6:airport_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rom567</untitled-ontology-6:airport_code>
+        <untitled-ontology-6:airport_country rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Italy</untitled-ontology-6:airport_country>
+        <untitled-ontology-6:airport_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rome City</untitled-ontology-6:airport_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Vienna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Vienna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE6"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS6"/>
+        <untitled-ontology-6:hasGroundCrew rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH6"/>
+        <untitled-ontology-6:airport_city rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vienna</untitled-ontology-6:airport_city>
+        <untitled-ontology-6:airport_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">VIE333</untitled-ontology-6:airport_code>
+        <untitled-ontology-6:airport_country rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Austria</untitled-ontology-6:airport_country>
+        <untitled-ontology-6:airport_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vienna city airport</untitled-ontology-6:airport_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BaggageHandlers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S10</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Pam</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BaggageHandlers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S11</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Jim</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BaggageHandlers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Dublin"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S12</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Scott</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BaggageHandlers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S110</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Dwight</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BaggageHandlers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Reykjavik"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S111</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Andy</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BaggageHandlers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#GroundCrew"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Vienna"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S112</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kevin</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BedRoom"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome"/>
+        <untitled-ontology-6:bedroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR1</untitled-ontology-6:bedroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BedRoom"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev"/>
+        <untitled-ontology-6:bedroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR2</untitled-ontology-6:bedroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BedRoom"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Dublin"/>
+        <untitled-ontology-6:bedroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR3</untitled-ontology-6:bedroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BedRoom"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo"/>
+        <untitled-ontology-6:bedroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR4</untitled-ontology-6:bedroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BedRoom"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Reykjavik"/>
+        <untitled-ontology-6:bedroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR5</untitled-ontology-6:bedroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BedRoom"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Vienna"/>
+        <untitled-ontology-6:bedroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BR6</untitled-ontology-6:bedroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ba1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ba1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Baggage"/>
+        <untitled-ontology-6:belongsTo rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pa_John"/>
+        <untitled-ontology-6:loadedInto rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl1"/>
+        <untitled-ontology-6:baggage_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BA1</untitled-ontology-6:baggage_id>
+        <untitled-ontology-6:baggage_type rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">bag</untitled-ontology-6:baggage_type>
+        <untitled-ontology-6:baggage_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.5</untitled-ontology-6:baggage_weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ba2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ba2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Baggage"/>
+        <untitled-ontology-6:belongsTo rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pa_Vassil"/>
+        <untitled-ontology-6:loadedInto rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl2"/>
+        <untitled-ontology-6:baggage_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BA2</untitled-ontology-6:baggage_id>
+        <untitled-ontology-6:baggage_type rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Suitcase</untitled-ontology-6:baggage_type>
+        <untitled-ontology-6:baggage_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.7</untitled-ontology-6:baggage_weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ba3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ba3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Baggage"/>
+        <untitled-ontology-6:belongsTo rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pa_Vassilev"/>
+        <untitled-ontology-6:loadedInto rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl3"/>
+        <untitled-ontology-6:baggage_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">BA3</untitled-ontology-6:baggage_id>
+        <untitled-ontology-6:baggage_type rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">bag</untitled-ontology-6:baggage_type>
+        <untitled-ontology-6:baggage_weight rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">10.9</untitled-ontology-6:baggage_weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+        <untitled-ontology-6:hasAirControllStaff rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC1"/>
+        <untitled-ontology-6:cs_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS1</untitled-ontology-6:cs_code>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+        <untitled-ontology-6:hasAirControllStaff rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC2"/>
+        <untitled-ontology-6:cs_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS2</untitled-ontology-6:cs_code>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+        <untitled-ontology-6:hasAirControllStaff rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC3"/>
+        <untitled-ontology-6:cs_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS2</untitled-ontology-6:cs_code>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+        <untitled-ontology-6:hasAirControllStaff rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC4"/>
+        <untitled-ontology-6:cs_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS4</untitled-ontology-6:cs_code>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+        <untitled-ontology-6:hasAirControllStaff rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC5"/>
+        <untitled-ontology-6:cs_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS5</untitled-ontology-6:cs_code>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+        <untitled-ontology-6:hasAirControllStaff rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ATC6"/>
+        <untitled-ontology-6:cs_code rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CS6</untitled-ontology-6:cs_code>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Cafeteria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome"/>
+        <untitled-ontology-6:cafe_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA1</untitled-ontology-6:cafe_id>
+        <untitled-ontology-6:cafe_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe1</untitled-ontology-6:cafe_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Cafeteria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev"/>
+        <untitled-ontology-6:cafe_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA2</untitled-ontology-6:cafe_id>
+        <untitled-ontology-6:cafe_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe2</untitled-ontology-6:cafe_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Cafeteria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Dublin"/>
+        <untitled-ontology-6:cafe_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA3</untitled-ontology-6:cafe_id>
+        <untitled-ontology-6:cafe_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe3</untitled-ontology-6:cafe_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Cafeteria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo"/>
+        <untitled-ontology-6:cafe_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA4</untitled-ontology-6:cafe_id>
+        <untitled-ontology-6:cafe_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe4</untitled-ontology-6:cafe_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Cafeteria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Reykjavik"/>
+        <untitled-ontology-6:cafe_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA5</untitled-ontology-6:cafe_id>
+        <untitled-ontology-6:cafe_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe5</untitled-ontology-6:cafe_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Cafeteria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Vienna"/>
+        <untitled-ontology-6:cafe_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">CA6</untitled-ontology-6:cafe_id>
+        <untitled-ontology-6:cafe_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cafe6</untitled-ontology-6:cafe_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DJ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DJ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DomesticJourney"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <untitled-ontology-6:hasRoute rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DR1"/>
+        <untitled-ontology-6:journeyViaAirports rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo"/>
+        <untitled-ontology-6:journey_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Luton</untitled-ontology-6:journey_destination>
+        <untitled-ontology-6:journey_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JFK911</untitled-ontology-6:journey_id>
+        <untitled-ontology-6:journey_start rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">London</untitled-ontology-6:journey_start>
+        <untitled-ontology-6:journey_stops rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</untitled-ontology-6:journey_stops>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DJ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DJ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DomesticJourney"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <untitled-ontology-6:hasRoute rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DR3"/>
+        <untitled-ontology-6:journey_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vienna</untitled-ontology-6:journey_destination>
+        <untitled-ontology-6:journey_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">HET7862</untitled-ontology-6:journey_id>
+        <untitled-ontology-6:journey_start rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Linz</untitled-ontology-6:journey_start>
+        <untitled-ontology-6:journey_stops rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</untitled-ontology-6:journey_stops>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DJ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DJ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DomesticJourney"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <untitled-ontology-6:hasExternalFactors rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_Flooding"/>
+        <untitled-ontology-6:hasRoute rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DR2"/>
+        <untitled-ontology-6:journeyViaAirports rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo"/>
+        <untitled-ontology-6:journey_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">California</untitled-ontology-6:journey_id>
+        <untitled-ontology-6:journey_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">POP7651</untitled-ontology-6:journey_id>
+        <untitled-ontology-6:journey_start rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">New York</untitled-ontology-6:journey_start>
+        <untitled-ontology-6:journey_stops rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</untitled-ontology-6:journey_stops>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DR1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Domestic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <untitled-ontology-6:hasControlTower rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS1"/>
+        <untitled-ontology-6:hasExternalFactors rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_NONE"/>
+        <untitled-ontology-6:landsOn rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome"/>
+        <untitled-ontology-6:route_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Rome</untitled-ontology-6:route_destination>
+        <untitled-ontology-6:route_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">USA7893</untitled-ontology-6:route_id>
+        <untitled-ontology-6:route_startlocation rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Sudtyrol</untitled-ontology-6:route_startlocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DR2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Domestic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <untitled-ontology-6:hasControlTower rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS2"/>
+        <untitled-ontology-6:hasExternalFactors rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_NONE"/>
+        <untitled-ontology-6:landsOn rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev"/>
+        <untitled-ontology-6:route_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kiev</untitled-ontology-6:route_destination>
+        <untitled-ontology-6:route_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">IN1345</untitled-ontology-6:route_id>
+        <untitled-ontology-6:route_startlocation rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Crimea</untitled-ontology-6:route_startlocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DR3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DR3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Domestic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <untitled-ontology-6:hasControlTower rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS3"/>
+        <untitled-ontology-6:hasExternalFactors rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_Lightning"/>
+        <untitled-ontology-6:landsOn rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Dublin"/>
+        <untitled-ontology-6:route_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Dublin</untitled-ontology-6:route_destination>
+        <untitled-ontology-6:route_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">IN1345</untitled-ontology-6:route_id>
+        <untitled-ontology-6:route_startlocation rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Belfast</untitled-ontology-6:route_startlocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_Flooding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_Flooding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ExternalFactors"/>
+        <untitled-ontology-6:EF_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Flooding</untitled-ontology-6:EF_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_Lightning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_Lightning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ExternalFactors"/>
+        <untitled-ontology-6:EF_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Lightning</untitled-ontology-6:EF_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_NONE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_NONE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ExternalFactors"/>
+        <untitled-ontology-6:EF_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Clear</untitled-ontology-6:EF_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_Snowstorm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_Snowstorm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ExternalFactors"/>
+        <untitled-ontology-6:EF_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Snowstorm</untitled-ontology-6:EF_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirCrew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FlightAttendants"/>
+        <untitled-ontology-6:ServesIn rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl1"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_BritishAirways"/>
+        <untitled-ontology-6:worksTogether rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi1"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S13</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ayirp</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirCrew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FlightAttendants"/>
+        <untitled-ontology-6:ServesIn rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl2"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_JetAirways"/>
+        <untitled-ontology-6:worksTogether rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi2"/>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Ben</untitled-ontology-6:staff_name>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S14</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirCrew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FlightAttendants"/>
+        <untitled-ontology-6:ServesIn rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl3"/>
+        <untitled-ontology-6:worksTogether rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi3"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S15</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Samuel</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IJ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IJ1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#InternationalJourney"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <untitled-ontology-6:hasRoute rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DR1"/>
+        <untitled-ontology-6:hasRoute rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IR1"/>
+        <untitled-ontology-6:journeyViaAirports rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome"/>
+        <untitled-ontology-6:journey_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Oslo</untitled-ontology-6:journey_destination>
+        <untitled-ontology-6:journey_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">IUK1894</untitled-ontology-6:journey_id>
+        <untitled-ontology-6:journey_start rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Sudtyrol</untitled-ontology-6:journey_start>
+        <untitled-ontology-6:journey_stops rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</untitled-ontology-6:journey_stops>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IJ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IJ2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#InternationalJourney"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <untitled-ontology-6:hasRoute rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IR2"/>
+        <untitled-ontology-6:journey_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Oslo</untitled-ontology-6:journey_destination>
+        <untitled-ontology-6:journey_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">GRT1479</untitled-ontology-6:journey_id>
+        <untitled-ontology-6:journey_start rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kiev</untitled-ontology-6:journey_start>
+        <untitled-ontology-6:journey_stops rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</untitled-ontology-6:journey_stops>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IJ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IJ3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#InternationalJourney"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+        <untitled-ontology-6:hasRoute rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IR3"/>
+        <untitled-ontology-6:journey_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vienna</untitled-ontology-6:journey_destination>
+        <untitled-ontology-6:journey_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">MEA5432</untitled-ontology-6:journey_id>
+        <untitled-ontology-6:journey_start rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">dublin</untitled-ontology-6:journey_start>
+        <untitled-ontology-6:journey_stops rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</untitled-ontology-6:journey_stops>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IR1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#International"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <untitled-ontology-6:hasControlTower rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS4"/>
+        <untitled-ontology-6:hasExternalFactors rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_Lightning"/>
+        <untitled-ontology-6:landsOn rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo"/>
+        <untitled-ontology-6:route_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Oslo</untitled-ontology-6:route_destination>
+        <untitled-ontology-6:route_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">MEA1345</untitled-ontology-6:route_id>
+        <untitled-ontology-6:route_startlocation rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rome</untitled-ontology-6:route_startlocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IR2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#International"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <untitled-ontology-6:hasControlTower rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS5"/>
+        <untitled-ontology-6:hasExternalFactors rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_Lightning"/>
+        <untitled-ontology-6:landsOn rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev"/>
+        <untitled-ontology-6:route_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Reykjavik</untitled-ontology-6:route_destination>
+        <untitled-ontology-6:route_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">SUM7617</untitled-ontology-6:route_id>
+        <untitled-ontology-6:route_startlocation rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kiev</untitled-ontology-6:route_startlocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IR3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IR3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#International"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+        <untitled-ontology-6:hasControlTower rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS6"/>
+        <untitled-ontology-6:hasExternalFactors rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#EF_NONE"/>
+        <untitled-ontology-6:landsOn rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Vienna"/>
+        <untitled-ontology-6:route_destination rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vienna</untitled-ontology-6:route_destination>
+        <untitled-ontology-6:route_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">FRE1945</untitled-ontology-6:route_id>
+        <untitled-ontology-6:route_startlocation rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Dublin</untitled-ontology-6:route_startlocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pa_John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pa_John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <untitled-ontology-6:guidedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS1"/>
+        <untitled-ontology-6:guidedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS2"/>
+        <untitled-ontology-6:guidedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS3"/>
+        <untitled-ontology-6:hasTicket rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ti1"/>
+        <untitled-ontology-6:onDomesticJourney rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DJ2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR1"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR3"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca1"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca3"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR1"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR3"/>
+        <untitled-ontology-6:passenger_age rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">35</untitled-ontology-6:passenger_age>
+        <untitled-ontology-6:passenger_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">John</untitled-ontology-6:passenger_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pa_Vassil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pa_Vassil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <untitled-ontology-6:hasTicket rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ti2"/>
+        <untitled-ontology-6:onInternationalJourney rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IJ2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR1"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR3"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca1"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca3"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR1"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR3"/>
+        <untitled-ontology-6:passenger_age rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">18</untitled-ontology-6:passenger_age>
+        <untitled-ontology-6:passenger_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vassil</untitled-ontology-6:passenger_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pa_Vassilev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pa_Vassilev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <untitled-ontology-6:hasTicket rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ti3"/>
+        <untitled-ontology-6:onInternationalJourney rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IJ3"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR1"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BR3"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca1"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ca3"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR1"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR2"/>
+        <untitled-ontology-6:passengerAccess rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR3"/>
+        <untitled-ontology-6:passenger_age rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">50</untitled-ontology-6:passenger_age>
+        <untitled-ontology-6:passenger_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Vassilev</untitled-ontology-6:passenger_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirCrew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pilot"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_BritishAirways"/>
+        <untitled-ontology-6:worksTogether rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA1"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S16</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Avdol</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirCrew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pilot"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_JetAirways"/>
+        <untitled-ontology-6:worksTogether rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA2"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S17</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Joseph</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pi3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AirCrew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pilot"/>
+        <untitled-ontology-6:worksFor rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airline_QatarAirways"/>
+        <untitled-ontology-6:worksTogether rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FA3"/>
+        <untitled-ontology-6:staff_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">S18</untitled-ontology-6:staff_id>
+        <untitled-ontology-6:staff_name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Jotaro</untitled-ontology-6:staff_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <untitled-ontology-6:guidedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS1"/>
+        <untitled-ontology-6:loadedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE1"/>
+        <untitled-ontology-6:loadedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS1"/>
+        <untitled-ontology-6:loadedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH1"/>
+        <untitled-ontology-6:onDomesticJourney rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#DJ2"/>
+        <untitled-ontology-6:plane_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">PLA1234</untitled-ontology-6:plane_id>
+        <untitled-ontology-6:plane_modelname rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Airbus</untitled-ontology-6:plane_modelname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <untitled-ontology-6:guidedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS2"/>
+        <untitled-ontology-6:loadedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE2"/>
+        <untitled-ontology-6:loadedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS2"/>
+        <untitled-ontology-6:loadedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH2"/>
+        <untitled-ontology-6:plane_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">PLA7856</untitled-ontology-6:plane_id>
+        <untitled-ontology-6:plane_modelname rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Mini</untitled-ontology-6:plane_modelname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pl3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+        <untitled-ontology-6:guidedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#CS3"/>
+        <untitled-ontology-6:loadedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AE3"/>
+        <untitled-ontology-6:loadedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#AS3"/>
+        <untitled-ontology-6:loadedBy rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#BH3"/>
+        <untitled-ontology-6:onInternationalJourney rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#IJ3"/>
+        <untitled-ontology-6:plane_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">PLA7862</untitled-ontology-6:plane_id>
+        <untitled-ontology-6:plane_modelname rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Booeing</untitled-ontology-6:plane_modelname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ti1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ti1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+        <untitled-ontology-6:ticket_departuretime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2100</untitled-ontology-6:ticket_departuretime>
+        <untitled-ontology-6:ticket_number rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">123B</untitled-ontology-6:ticket_number>
+        <untitled-ontology-6:ticket_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">123.25</untitled-ontology-6:ticket_price>
+        <untitled-ontology-6:ticket_type rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Business</untitled-ontology-6:ticket_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ti2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ti2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+        <untitled-ontology-6:ticket_departuretime rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">1600</untitled-ontology-6:ticket_departuretime>
+        <untitled-ontology-6:ticket_number rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">147Q</untitled-ontology-6:ticket_number>
+        <untitled-ontology-6:ticket_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</untitled-ontology-6:ticket_price>
+        <untitled-ontology-6:ticket_type rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">First Class</untitled-ontology-6:ticket_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ti3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ti3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+        <untitled-ontology-6:ticket_departuretime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</untitled-ontology-6:ticket_departuretime>
+        <untitled-ontology-6:ticket_number rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">129T</untitled-ontology-6:ticket_number>
+        <untitled-ontology-6:ticket_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</untitled-ontology-6:ticket_price>
+        <untitled-ontology-6:ticket_type>Economy</untitled-ontology-6:ticket_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WashRoom"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Rome"/>
+        <untitled-ontology-6:washroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">W1</untitled-ontology-6:washroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WashRoom"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Kiev"/>
+        <untitled-ontology-6:washroom_id>W2</untitled-ontology-6:washroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WashRoom"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Dublin"/>
+        <untitled-ontology-6:washroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">W3</untitled-ontology-6:washroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WashRoom"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Oslo"/>
+        <untitled-ontology-6:washroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">W4</untitled-ontology-6:washroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WashRoom"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Reykjavik"/>
+        <untitled-ontology-6:washroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">W5</untitled-ontology-6:washroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WR6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#WashRoom"/>
+        <untitled-ontology-6:infrastructureOf rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport_Vienna"/>
+        <untitled-ontology-6:washroom_id rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">WR6</untitled-ontology-6:washroom_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Every plane in a journey is guided by a control tower guiding it</rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Route"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ControlStation"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#onDomesticJourney"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasRoute"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/w"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#guidedBy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Some journeys may have an exteral factor</rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ExternalFactors"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasExternalFactors"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Pilot and flightattendants work together in a flight</rdfs:comment>
+        <rdfs:label>S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Pilot"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#FlightAttendants"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Plane"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Flies"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ServesIn"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#worksTogether"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Every Journey with more than 0 intermediate stops passes via an airport</rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Airport"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasNumberOfStops"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/n"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/n"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#journeyViaAirports"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>A passenger with a valid ticket has access to Lounge</rdfs:comment>
+        <rdfs:label>S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Lounge"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasTicket"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#passengerAccess"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Every passenger with a ticket is on a journey</rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Ticket"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Passengers"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#hasTicket"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/y"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#ticketOf"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/z"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6#Journey"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/indra/ontologies/2023/3/untitled-ontology-6/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
